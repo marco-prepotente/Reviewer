@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Reviewer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Comprehensive Reviewer</h1>
+            <p>Select a subject to start reading.</p>
+        </header>
+
+        <nav id="topic-selection">
+            <div class="topic-buttons">
+                <button class="topic-btn" data-topic="gen-math">General Mathematics</button>
+                <button class="topic-btn" data-topic="history">History (PKLP)</button>
+                <button class="topic-btn" data-topic="english">English (Effective Com)</button>
+                <button class="topic-btn" data-topic="lacs">Life & Career Skills</button>
+                <button class="topic-btn" data-topic="filipino">Filipino (Mabisang Kom)</button>
+                <button class="topic-btn" data-topic="gen-science">General Science</button>
+            </div>
+        </nav>
+
+        <main id="reviewer-main" class="hidden">
+            <div class="reviewer-header">
+                <h2 id="topic-title"></h2>
+            </div>
+            <div id="content-display">
+            </div>
+            <button id="back-to-topics-btn">Back to Subjects</button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
